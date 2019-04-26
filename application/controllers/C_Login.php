@@ -28,10 +28,17 @@ class C_Login extends CI_Controller {
                        'expire' => 3600);
         set_cookie($cookies);
         $this->session->set_userdata($result);
+<<<<<<< HEAD
 
         redirect(site_url() , 'refresh');
       } else {
 
+=======
+        echo "success";
+        redirect(site_url() , 'refresh');
+      } else {
+        echo "not success";
+>>>>>>> 22700cd9be2457c85fad784a77c55318dfdefb8e
         $this->session->set_userdata($result);
         redirect(site_url(), 'refresh');
       }
